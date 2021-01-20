@@ -1,0 +1,178 @@
+<html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Import custom css -->
+      <link rel="stylesheet" href="static/css/style.css">
+
+      <!-- Materialize Icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!-- Import Font Awesome -->
+      <script src="https://kit.fontawesome.com/ddce742ad3.js" crossorigin="anonymous"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <title>Homepage</title>
+    </head>
+
+    <body>
+        <!-- Section: Preloader -->
+        <div class="loader_bg">
+            <div class="loader"></div>
+    
+        </div>
+        <nav class="navbar-fixed">
+            <nav class="teal" role="navigation">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo" >HomePage</a>
+                        <!-- Show Slide Out for Mobile -->
+                        <a href="#" data-target="slideout" class="sidenav-trigger">
+                            <i class="material-icons white-text">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down black-text">
+                            <li>
+                                <a href="index.html" class="page-scroll">home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="page-scroll">about</a>
+                            </li>
+                            <li>
+                                <a href="services.html" class="page-scroll">Hobbies</a>
+                            </li>
+                            
+                            <li>
+                                <a href="contact.html" class="page-scroll">contact</a>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+
+            </nav>
+        </nav>
+
+
+        <!-- Side out for mobile devices -->
+        <ul id="slideout" class="sidenav">
+            <li><div class="user-view">
+                <div class="background">
+                  <img src="static/img/IMG_3531.PNG">
+                </div>
+                <a href="#user"><img class="circle" src="static/img/opengraph-icon-200x200.png"></a>
+                <a href="#name"><span class="white-text name">Jeroen</span></a>
+                <a href="#email"><span class="white-text email">vddjeroen@hotmail.com</span></a>
+              </div></li>
+            <li>
+                <a href="index.html" class="black-text page-scroll">Home</a>
+            </li>
+            <li>
+                <a href="about.html" class="black-text page-scroll">About</a>
+            </li>
+            <li>
+                <a href="services.html" class="black-text page-scroll">Hobbies</a>
+            </li>
+            
+            <li>
+                <a href="contact.html" class="black-text page-scroll">contact</a>
+            </li>
+            
+        </ul>
+
+
+        <!-- Section: Contact -->
+        <section id="contact" class="section section-contact grey lighten-5 scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card-panel black-text center Reach">
+                            <i class="material-icons black-text medium">accessibility</i>
+                            <h2>Reach Out</h2>
+                            
+                        </div>
+                        <ul class="collection with-header">
+                           
+                            <li class="collection-item">
+                                <i class="material-icons">person_pin_circle</i>
+                                Antwarp, Belgium.
+                            </li>
+                            <li class="collection-item">
+                                <i class="material-icons">phone</i>
+                                ...</li>
+
+                            <li class="collection-item">
+                                <i class="material-icons">email </i>
+                                vddjeroen@hotmail.com</li>
+                        </ul>
+                    </div>
+   
+                    <div class="col s12 m6">
+                        <div class="card-panel white">
+                            <h2>Contact Form</h2>
+                            <form action="https://formspree.io/f/mknppgqr" method="POST" id="my-form">
+                                <div class="input-field">
+                                    <input type="text" id="name" placeholder="First name...">
+                                </div>       
+                                <div class="input-field">
+                                    <input type="text" placeholder="Last name...">
+                                </div>                     
+                               <div class="input-field">
+                                   <input type="email" id="autocomplete-input" class="autocomplete" placeholder="Email Adress...">
+                               </div>
+                               <div class="input-field">
+                                   <i class="material-icons prefix">textsms</i>
+                                   
+                                   <textarea name="Message" id="" cols="30" rows="10" class="materialize-textarea" placeholder="Enter Message"></textarea>    
+                               </div>
+                               <div>
+                                   
+                                   <input type="submit" class="btn black-text" value="Submit Message">
+                               </div>
+
+                            </form>
+                            
+                        </div>
+                        <div id="status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+
+       <!-- jquery -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js" integrity="sha512-cEgdeh0IWe1pUYypx4mYPjDxGB/tyIORwjxzKrnoxcif2ZxI7fw81pZWV0lGnPWLrfIHGA7qc964MnRjyCYmEQ==" crossorigin="anonymous"></script>
+        
+       <script>
+           // Initializing a Preloader
+           setTimeout(function(){
+               $('.loader_bg').fadeToggle();
+           }, 1000)
+           
+       </script>
+ 
+ 
+ 
+       <!--JavaScript at end of body for optimized loading-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+ 
+       <!-- Custom js -->
+       <script src="static/js/loader.js"></script>
+ 
+       <!-- JavaScript DarkMode -->
+       <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+ 
+       <script src="static/js/darkmode.js"></script>
+    </body>
+  </html>
